@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freaky Fashion</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="text-lg font-font-Arial">
     <header class="p-2">
@@ -98,59 +102,89 @@
       >
         Liknande produkter
       </div>
-      <div class="hidden sm:flex sm:mt-8 px-8 sm:gap-4">
-        <a class="flex justify-center items-center" href="">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-angle-left fa-2xl"></i>
-          </div>
-        </a>
-        <a href="">
-          <div>
-            <img
-              class="w-full lg:order-last"
-              src="https://placehold.co/3000x4000 "
-              alt=""
-            />
-            <div class="flex gap-4">
-              <div class="font-bold">Svart T-Shirt</div>
-              <div class="font-bold ml-auto">199 SEK</div>
+      <div class="hidden sm:flex sm:mt-8">
+        <div class="w-full relative hidden sm:block">
+          <div class="swiper centered-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper">
+              <!-- ggg -->
+              <div class="swiper-slide">
+                <img
+                  class="w-full aspect-[3/4]"
+                  src="https://placehold.co/3000x4000 "
+                  alt=""
+                />
+                <div class="flex gap-4 h-96">
+                  <div class="font-bold">Svart T-Shirt</div>
+                  <div class="font-bold ml-auto">199 SEK</div>
+                </div>
+                <div>Levis</div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  class="w-full aspect-[3/4]"
+                  src="https://placehold.co/3000x4000 "
+                  alt=""
+                />
+                <div class="flex gap-4 h-96">
+                  <div class="font-bold">Svart T-Shirt</div>
+                  <div class="font-bold ml-auto">199 SEK</div>
+                </div>
+                <div>Levis</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-full aspect-[3/4]"
+                  src="https://placehold.co/3000x4000 "
+                  alt=""
+                />
+                <div class="flex gap-4 h-96">
+                  <div class="font-bold">Svart T-Shirt</div>
+                  <div class="font-bold ml-auto">199 SEK</div>
+                </div>
+                <div>Levis</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-full aspect-[3/4]"
+                  src="https://placehold.co/3000x4000 "
+                  alt=""
+                />
+                <div class="flex gap-4 h-96">
+                  <div class="font-bold">Svart T-Shirt</div>
+                  <div class="font-bold ml-auto">199 SEK</div>
+                </div>
+                <div>Levis</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-full aspect-[3/4]"
+                  src="https://placehold.co/3000x4000 "
+                  alt=""
+                />
+                <div class="flex gap-4 h-96">
+                  <div class="font-bold">Svart T-Shirt</div>
+                  <div class="font-bold ml-auto">199 SEK</div>
+                </div>
+                <div>Levis</div>
+              </div>
             </div>
-            <div>Levis</div>
-          </div>
-        </a>
-        <a href="">
-          <div>
-            <img
-              class="w-full lg:order-last"
-              src="https://placehold.co/3000x4000 "
-              alt=""
-            />
-            <div class="flex gap-4">
-              <div class="font-bold">Svart T-Shirt</div>
-              <div class="font-bold ml-auto">199 SEK</div>
+
+            <div
+              class="flex items-center gap-8 lg:justify-start justify-center"
+            >
+              <button
+                id="slider-button-left"
+                class="swiper-button-prev !text-gray-500 hover:!text-black group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 !top-2/4 !-translate-y-8 !left-5"
+              ></button>
+              <button
+                id="slider-button-right"
+                class="swiper-button-next !text-gray-500 hover:!text-black group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 !top-2/4 !-translate-y-8 !right-5"
+                data-carousel-next
+              ></button>
             </div>
-            <div>Levis</div>
           </div>
-        </a>
-        <a href="">
-          <div>
-            <img
-              class="w-full lg:order-last"
-              src="https://placehold.co/3000x4000 "
-              alt=""
-            />
-            <div class="flex gap-4">
-              <div class="font-bold">Svart T-Shirt</div>
-              <div class="font-bold ml-auto">199 SEK</div>
-            </div>
-            <div>Levis</div>
-          </div>
-        </a>
-        <a class="flex justify-center items-center" href="">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-angle-right fa-2xl"></i>
-          </div>
-        </a>
+        </div>
       </div>
 
       <div class="px-4 py-8 grid sm:grid-cols-2 lg:grid-cols-4">
@@ -371,6 +405,35 @@
           icon.innerHTML = downSVG;
         }
       }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".centered-slide-carousel", {
+        loop: true,
+        spaceBetween: 30,
+        slideToClickedSlide: true,
+        navigation: {
+          nextEl: ".centered-slide-carousel .swiper-button-next",
+          prevEl: ".centered-slide-carousel .swiper-button-prev",
+        },
+
+        breakpoints: {
+          1472: {
+            slidesPerView: 3,
+            spaceBetween: 90,
+          },
+          1025: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          641: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
     </script>
   </body>
 </html>
