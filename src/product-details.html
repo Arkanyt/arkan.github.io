@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freaky Fashion</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-lg font-font-Arial">
+    <header class="p-2">
+      <div class="block sm:flex mb-4 sm:mb-0 pb-2">
+        <div
+          class="bg-gray-200 min-w-40 aspect-[16/4] mb-4 sm:mb-0 mr-0 sm:mr-4 flex justify-center items-center"
+        >
+          LOGO
+        </div>
+        <div class="flex w-full gap-x-4">
+          <div
+            class="w-full sm:max-w-80 relative flex justify-center items-center"
+          >
+            <input
+              class="w-full border rounded-2xl border-gray-200 p-1 pl-8"
+              type="text"
+              placeholder="Sök produkt"
+            />
+            <div
+              class="flex justify-center items-center absolute top-2/4 -translate-y-2/4 left-0 w-8 h-full"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center min-w-11 ml-auto pr-2">
+            <a href=""><i class="fa-solid fa-heart fa-lg px-1"></i> </a>
+            <a href=""><i class="fa-solid fa-cart-shopping px-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="block sm:flex sm:gap-4">
+          <li>Nyheter</li>
+          <li>Topplistan</li>
+          <li>Rea</li>
+          <li>Kampanjer</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="mt-4 px-4 sm:px-8 my-0 sm: grid sm:grid-cols-2 sm:gap-4">
+        <div class="relative">
+          <img
+            class="animate-pulse delay-12 w-full lg:order-last"
+            src="https://placehold.co/3000x4000 "
+            alt=""
+          />
+          <div class="absolute bottom-4 right-4">
+            <i class="fa-regular fa-heart fa-2xl"></i>
+          </div>
+        </div>
+        <div class="sm:block">
+          <div
+            class="mt-3 mb-2 text-lg text-black font-bold animate-out slide-out-to-right-12"
+          >
+            Svart T-Shirt
+          </div>
+
+          <div
+            class="mt-3 mb-2 text-gray-600 animate-out slide-out-to-right-12"
+          >
+            Levis
+          </div>
+
+          <div
+            class="mb-4 mt-7 text-lg text-black w-96 animate-out slide-out-to-right-12"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex
+          </div>
+
+          <div
+            class="mb-4 text-lg text-black font-medium animate-out slide-out-to-right-12"
+          >
+            199 SEK
+          </div>
+
+          <div
+            class="w-auto pt-1 pb-1 text-center border border-black border-solid rounded text-lg text-black font-medium mb-2 sm:w-40 sm:p-1 hover:bg-black hover:text-white animate-out slide-out-to-right-12 hover:delay-100"
+          >
+            <button class="animate-bounce direction-normal">
+              Lägg i varukorg
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden sm:flex sm:justify-center sm:items-center sm:mt-8 font-bold"
+      >
+        Liknande produkter
+      </div>
+      <div class="hidden sm:flex sm:mt-8 px-8 sm:gap-4">
+        <a class="flex justify-center items-center" href="">
+          <div class="flex justify-center items-center">
+            <i class="fa-solid fa-angle-left fa-2xl"></i>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              class="w-full lg:order-last"
+              src="https://placehold.co/3000x4000 "
+              alt=""
+            />
+            <div class="flex gap-4">
+              <div class="font-bold">Svart T-Shirt</div>
+              <div class="font-bold ml-auto">199 SEK</div>
+            </div>
+            <div>Levis</div>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              class="w-full lg:order-last"
+              src="https://placehold.co/3000x4000 "
+              alt=""
+            />
+            <div class="flex gap-4">
+              <div class="font-bold">Svart T-Shirt</div>
+              <div class="font-bold ml-auto">199 SEK</div>
+            </div>
+            <div>Levis</div>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              class="w-full lg:order-last"
+              src="https://placehold.co/3000x4000 "
+              alt=""
+            />
+            <div class="flex gap-4">
+              <div class="font-bold">Svart T-Shirt</div>
+              <div class="font-bold ml-auto">199 SEK</div>
+            </div>
+            <div>Levis</div>
+          </div>
+        </a>
+        <a class="flex justify-center items-center" href="">
+          <div class="flex justify-center items-center">
+            <i class="fa-solid fa-angle-right fa-2xl"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="px-4 py-8 grid sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex">
+          <div class="p-4">
+            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+          </div>
+          <div class="flex items-center">Gratis frakt och returer</div>
+        </div>
+        <div class="flex">
+          <div class="p-4">
+            <i class="fa-solid fa-jet-fighter fa-2xl"></i>
+          </div>
+          <div class="flex items-center">Expressfrakt</div>
+        </div>
+        <div class="flex">
+          <div class="p-4">
+            <i class="fa-solid fa-shield-halved fa-2xl"></i>
+          </div>
+          <div class="flex items-center">Säkra betalningar</div>
+        </div>
+        <div class="flex">
+          <div class="p-4">
+            <i class="fa-regular fa-face-smile fa-2xl"></i>
+          </div>
+          <div class="flex items-center">Nyheter varje dag</div>
+        </div>
+      </div>
+      <footer>
+        <div class="hidden sm:block bg-gray-200 pt-16">
+          <div class="grid grid-cols-3">
+            <div class="grid justify-center items-center">
+              <div class="font-bold text-center pb-4">Shopping</div>
+              <div class="grid justify-center items-center gap-y-2">
+                <div class="text-center">Vinterjackor</div>
+                <div class="text-center">Pufferjackor</div>
+                <div class="text-center">Kappa</div>
+                <div class="text-center">Trenchcoats</div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="font-bold text-center pb-4">Mina Sidor</div>
+              <div class="grid justify-center items-center gap-y-2">
+                <div class="text-center">Mina Ordrar</div>
+                <div class="text-center">Mitt Konto</div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="font-bold text-center pb-4">Kundtjänst</div>
+              <div class="grid justify-center items-center gap-y-2">
+                <div class="text-center">Returnpolicy</div>
+                <div class="text-center">Integritetspolicy</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center pt-8 pb-8">
+            &copy; Freaky Fashion
+          </div>
+        </div>
+
+        <div class="sm:hidden p-2">
+          <!-- Accordion Item 1 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(1)"
+              class="w-full flex justify-between items-center py-5 text-slate-800"
+            >
+              <span>Shopping</span>
+              <span
+                id="icon-1"
+                class="text-slate-800 transition-transform duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-1"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-2 pl-2">
+                <a href="">Vinterjackor</a>
+              </div>
+              <div class="pb-2 pl-2">
+                <a href="">Puferjackor</a>
+              </div>
+              <div class="pb-2 pl-2">
+                <a href="">Kappa</a>
+              </div>
+              <div class="pb-2 pl-2">
+                <a href="">Trenchcoats</a>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="border-b border-slate-200">
+              <button
+                onclick="toggleAccordion(2)"
+                class="w-full flex justify-between items-center py-5 text-slate-800"
+              >
+                <span>Mina Sidor</span>
+                <span
+                  id="icon-2"
+                  class="text-slate-800 transition-transform duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                id="content-2"
+                class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pb-2 pl-2">
+                  <a href="">Mina Ordrar</a>
+                </div>
+                <div class="pb-2 pl-2">
+                  <a href="">Mitt Konto </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="border-b border-slate-200">
+              <button
+                onclick="toggleAccordion(3)"
+                class="w-full flex justify-between items-center py-5 text-slate-800"
+              >
+                <span>Kundtjänst</span>
+                <span
+                  id="icon-3"
+                  class="text-slate-800 transition-transform duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                id="content-3"
+                class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="pb-2 pl-2">
+                  <a href="">Returnpolicy</a>
+                </div>
+                <div class="pb-2 pl-2">
+                  <a href="">Mitt Konto </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center pb-12 pt-12 animate-shake animate-infinite animate-ease-linear animate-fill-both"
+          >
+            &copy; Freaky Fashion
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ee0d318d54.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // SVG for Down icon
+        const downSVG = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        `;
+
+        // SVG for Up icon
+        const upSVG = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+          </svg>
+        `;
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0";
+          icon.innerHTML = upSVG;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.innerHTML = downSVG;
+        }
+      }
+    </script>
+  </body>
+</html>

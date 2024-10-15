@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freaky Fashion</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-lg font-font-Arial">
+    <header class="p-2">
+      <div class="block sm:flex mb-4 sm:mb-0 pb-2">
+        <div
+          class="bg-gray-200 min-w-40 aspect-[16/4] mb-4 sm:mb-0 mr-0 sm:mr-4 flex justify-center items-center"
+        >
+          LOGO
+        </div>
+        <div class="flex w-full gap-x-4">
+          <div
+            class="w-full sm:max-w-80 relative flex justify-center items-center"
+          >
+            <input
+              class="w-full border rounded-2xl border-gray-200 p-1 pl-8"
+              type="text"
+              placeholder="Sök produkt"
+            />
+            <div
+              class="flex justify-center items-center absolute top-2/4 -translate-y-2/4 left-0 w-8 h-full"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-center min-w-11 ml-auto pr-2">
+            <a href=""><i class="fa-solid fa-heart fa-lg px-1"></i> </a>
+            <a href=""><i class="fa-solid fa-cart-shopping px-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="block sm:flex sm:gap-4">
+          <li>Nyheter</li>
+          <li>Topplistan</li>
+          <li>Rea</li>
+          <li>Kampanjer</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="px-4 sm:px-8">
+        <div class="text-center font-bold pb-4">Kassan</div>
+        <div class="sm:hidden mt-8">
+          <div class="border border-black p-4">
+            <div class="flex justify-center items-center">
+              <div class="font-semibold">1 x Svart T-Shirt</div>
+              <div class="ml-auto font-semibold">199 SEK</div>
+            </div>
+            <div class="text-gray-500 text-sm">199 SEK</div>
+          </div>
+          <div class="border border-black p-4">
+            <div class="flex justify-center items-center">
+              <div class="font-semibold">1 x Svart T-Shirt</div>
+              <div class="ml-auto font-semibold">398 SEK</div>
+            </div>
+            <div class="text-gray-500 text-sm">199 SEK</div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block">
+          <table
+            class="w-full text-left border-collapse table-auto border border-black"
+          >
+            <tr class="bg-gray-200">
+              <th class="border border-black">Produkt</th>
+              <th class="border border-black">Antal</th>
+              <th class="border border-black">Pris</th>
+              <th class="border border-black">Totalt</th>
+            </tr>
+            <tr class="even:bg-gray-100 odd:bg-white">
+              <td class="">Svart T-Shirt</td>
+              <td class="">1</td>
+              <td class="">199 kr</td>
+              <td class="">199 kr</td>
+            </tr>
+            <tr class="even:bg-gray-100 odd:bg-white">
+              <td class="">Svart T-Shirt</td>
+              <td class="">1</td>
+              <td class="">199 kr</td>
+              <td class="">199 kr</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="px-4 py-4">
+        <h2 class="text-center sm:text-start mt-4 mb-4 font-bold">
+          Kunduppgifter
+        </h2>
+        <div
+          class="sm:grid sm:grid-cols-2 sm:gap-4 sm:w-full justify-center items-start"
+        >
+          <div class="sm:flex sm:flex-col">
+            <label for="förnamm">Förnamn:</label>
+            <input
+              class="w-full pt-1 pb-1 mb-2 text-start border border-black"
+              type="text"
+              id="förnamm"
+              name="förnamm"
+            />
+          </div>
+          <div class="sm:flex sm:flex-col">
+            <label for="enamn">Efternamn:</label>
+            <input
+              class="w-full pt-1 pb-1 text-start border border-black"
+              type="text"
+              id="enamn"
+              name="enamn"
+            />
+          </div>
+          <div class="sm:flex sm:flex-col">
+            <label for="epost">E-post</label>
+            <input
+              class="w-full pt-1 pb-1 text-start border border-black"
+              type="text"
+              id="epost"
+              name="epost"
+            />
+          </div>
+        </div>
+        <fieldset
+          class="border border-black sm:w-full px-4 py-8 mt-4 sm:h-full"
+        >
+          <legend class="px-2">Adress</legend>
+          <div class="sm:flex sm:flex-col">
+            <label for="gata">Gata:</label>
+            <input
+              class="w-full pt-1 pb-1 mb-2 text-start border border-black"
+              type="text"
+              id="gata"
+              name="gata"
+            />
+          </div>
+          <div class="sm:flex sm:flex-col">
+            <label for="pnummer">Postnummer:</label>
+            <input
+              class="w-full pt-1 pb-1 text-start border border-black"
+              type="text"
+              id="pnummer"
+              name="pnummer"
+            />
+          </div>
+          <div class="sm:flex sm:flex-col">
+            <label for="stad">Stad</label>
+            <input
+              class="w-full pt-1 pb-1 text-start border border-black"
+              type="text"
+              id="stad"
+              name="stad"
+            />
+          </div>
+        </fieldset>
+        <div class="py-4">
+          <input
+            type="checkbox"
+            id="nyhetsbrev"
+            name="nyhetsbrev"
+            value="news"
+          />
+          <label for="nyhetsbrev"> Jag vill ta emot nyhetsbrev</label>
+        </div>
+        <div class="flex justify-center items-center">
+          <button class="border border-black px-16 py-2 rounded-lg">Köp</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="hidden sm:block bg-gray-200 pt-16">
+        <div class="grid grid-cols-3">
+          <div class="grid justify-center items-center">
+            <div class="font-bold text-center pb-4">Shopping</div>
+            <div class="grid justify-center items-center gap-y-2">
+              <div class="text-center">Vinterjackor</div>
+              <div class="text-center">Pufferjackor</div>
+              <div class="text-center">Kappa</div>
+              <div class="text-center">Trenchcoats</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="font-bold text-center pb-4">Mina Sidor</div>
+            <div class="grid justify-center items-center gap-y-2">
+              <div class="text-center">Mina Ordrar</div>
+              <div class="text-center">Mitt Konto</div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="font-bold text-center pb-4">Kundtjänst</div>
+            <div class="grid justify-center items-center gap-y-2">
+              <div class="text-center">Returnpolicy</div>
+              <div class="text-center">Integritetspolicy</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pt-8 pb-8">
+          &copy; Freaky Fashion
+        </div>
+      </div>
+
+      <div class="sm:hidden p-2">
+        <!-- Accordion Item 1 -->
+        <div class="border-b border-slate-200">
+          <button
+            onclick="toggleAccordion(1)"
+            class="w-full flex justify-between items-center py-5 text-slate-800"
+          >
+            <span>Shopping</span>
+            <span
+              id="icon-1"
+              class="text-slate-800 transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            id="content-1"
+            class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <div class="pb-2 pl-2">
+              <a href="">Vinterjackor</a>
+            </div>
+            <div class="pb-2 pl-2">
+              <a href="">Puferjackor</a>
+            </div>
+            <div class="pb-2 pl-2">
+              <a href="">Kappa</a>
+            </div>
+            <div class="pb-2 pl-2">
+              <a href="">Trenchcoats</a>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(2)"
+              class="w-full flex justify-between items-center py-5 text-slate-800"
+            >
+              <span>Mina Sidor</span>
+              <span
+                id="icon-2"
+                class="text-slate-800 transition-transform duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-2"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-2 pl-2">
+                <a href="">Mina Ordrar</a>
+              </div>
+              <div class="pb-2 pl-2">
+                <a href="">Mitt Konto </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(3)"
+              class="w-full flex justify-between items-center py-5 text-slate-800"
+            >
+              <span>Kundtjänst</span>
+              <span
+                id="icon-3"
+                class="text-slate-800 transition-transform duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-3"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-2 pl-2">
+                <a href="">Returnpolicy</a>
+              </div>
+              <div class="pb-2 pl-2">
+                <a href="">Mitt Konto </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pb-12 pt-12">
+          &copy; Arkan
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/ee0d318d54.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // SVG for Down icon
+        const downSVG = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        `;
+
+        // SVG for Up icon
+        const upSVG = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+          </svg>
+        `;
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0";
+          icon.innerHTML = upSVG;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.innerHTML = downSVG;
+        }
+      }
+    </script>
+  </body>
+</html>

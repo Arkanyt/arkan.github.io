@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <script
+      src="https://kit.fontawesome.com/ee0d318d54.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="text-lg font-font-Arial">
+    <div class="w-full h-screen pt-16 relative">
+      <div
+        class="bg-black text-white h-16 max-h-16 absolute w-full top-0 left-0 flex px-4 items-center"
+      >
+        Administration
+      </div>
+      <div class="flex h-full">
+        <div class="bg-gray-200 w-96 h-full p-4 font-bold">Produkter</div>
+        <div class="p-4 w-full">
+          <div class="flex py-4 px-4">
+            <div class="font-bold">Produkter</div>
+            <div class="ml-auto">
+              <button class="border border-black px-2 py-1 rounded-lg">
+                Ny produkt
+              </button>
+            </div>
+          </div>
+          <div class="pt-8 px-4">
+            <table
+              class="w-full text-left border-collapse table-auto border border-black"
+            >
+              <tr class="bg-gray-200">
+                <th class="border border-black">Namn</th>
+                <th class="border border-black">SKU</th>
+                <th class="border border-black">Pris</th>
+                <th class="border border-black"></th>
+              </tr>
+              <tr class="even:bg-gray-100 odd:bg-white">
+                <td class="pl-2">Svart T-Shirt</td>
+                <td class="">AAA111</td>
+                <td class="">199 kr</td>
+                <td class="flex justify-center items-center py-2">
+                  <i class="fa-solid fa-trash px-4"></i
+                  ><i class="fa-solid fa-share-from-square"></i>
+                </td>
+              </tr>
+              <tr class="even:bg-gray-100 odd:bg-white">
+                <td class="pl-2">Vit T-Shirt</td>
+                <td class="">BBB111</td>
+                <td class="">199 kr</td>
+                <td class="flex justify-center items-center py-2">
+                  <i class="fa-solid fa-trash px-4"></i
+                  ><i class="fa-solid fa-share-from-square"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

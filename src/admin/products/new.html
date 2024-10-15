@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <script
+      src="https://kit.fontawesome.com/ee0d318d54.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="text-lg font-font-Arial">
+    <div class="w-full h-screen pt-16 relative">
+      <div
+        class="bg-black text-white h-16 max-h-16 absolute w-full top-0 left-0 flex px-4 items-center"
+      >
+        Administration
+      </div>
+      <div class="flex h-full">
+        <div class="bg-gray-200 w-96 h-full p-4 font-bold">Produkter</div>
+        <div class="p-16 w-full">
+          <form class="flex flex-col w-full gap-4 px-4 py-8">
+            <div class="pb-4 font-bold">Ny produkt</div>
+            <label>Namn</label>
+            <input
+              class="border border-black w-56 py-1"
+              type="text"
+              maxlength="50"
+              placeholder="Ange namn"
+            />
+            <label>Beskrivning</label>
+            <textarea
+              class="border border-black w-96 h-36 placeholder:text-black pl-2"
+              placeholder="Ange beskrivning"
+            ></textarea>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept="image/*"
+              class="inputfile invisible"
+            />
+            <label>Bild</label>
+            <label
+              class="border border-black w-28 text-center py-1 rounded"
+              for="file"
+              >Välj Bild
+            </label>
+            <label for="SKU">SKU</label>
+            <input
+              class="border border-black w-56 py-1"
+              type="text"
+              id="SKU"
+              name="SKU"
+              pattern="[A-Za-z]{3}[1-9]{3}"
+              title="Du måste skriva 3 bokstäver och 3 siffror"
+              required
+            />
+            <label>Pris</label>
+            <input class="border border-black w-56 py-1" type="text" />
+            <label>Publiseringsdatum</label>
+            <input
+              class="border border-black w-56 py-1"
+              type="text"
+              placeholder="MM/DD/YYYY"
+              onfocus="(this.type='date')"
+            />
+            <div>
+              <div>Kategorier</div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="T-Shirt"
+                  name="T-Shirt"
+                  value="TShirt"
+                />
+                <label for="T-Shirt">T-Shirts</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="sommar"
+                  name="sommar"
+                  value="väder"
+                />
+                <label for="sommar">Sommar</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Byxor" name="Byxor" value="Byxor" />
+                <label for="Byxor">Byxor</label>
+              </div>
+              <div>
+                <input type="checkbox" id="skor" name="skor" value="skor" />
+                <label for="skor">Skor</label>
+              </div>
+            </div>
+            <button class="border-2 border-black w-24 p-1 rounded">
+              Lägg till
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
