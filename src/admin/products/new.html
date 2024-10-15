@@ -28,25 +28,27 @@
               type="text"
               maxlength="50"
               placeholder="Ange namn"
+              required
             />
             <label>Beskrivning</label>
             <textarea
               class="border border-black w-96 h-36 placeholder:text-black pl-2"
               placeholder="Ange beskrivning"
             ></textarea>
+            <label>Bild</label>
             <input
               type="file"
               name="file"
               id="file"
-              accept="image/*"
-              class="inputfile invisible"
+              accept="image/gif, image/jpeg, image/png"
+              class="w-fit"
+              required
             />
-            <label>Bild</label>
-            <label
+            <!-- <label
               class="border border-black w-28 text-center py-1 rounded"
               for="file"
               >Välj Bild
-            </label>
+            </label> -->
             <label for="SKU">SKU</label>
             <input
               class="border border-black w-56 py-1"

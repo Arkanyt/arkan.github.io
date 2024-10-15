@@ -554,10 +554,6 @@ video {
   display: none;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .absolute {
   position: absolute;
 }
@@ -729,6 +725,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .min-w-11 {
@@ -1133,6 +1134,17 @@ video {
 
 .direction-normal {
   animation-direction: normal;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  border-width: 1px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  cursor: pointer;
 }
 
 .placeholder\:text-black::-moz-placeholder {
